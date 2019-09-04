@@ -1,19 +1,27 @@
-# camunda BPM - Getting Started with camunda BPM and Spring Boot
+# Camunda SpringBoot Sample 🍉
 
-This Repository contains the example Spring Boot application for the guide at [camunda.org](http://camunda.org/get-started/spring-boot.html).
-
-Every step of the tutorial was tagged in this repository. You can jump to the final state of each step
-by the following command:
-
+## Usage:
+1. Build module.
 ```
-git checkout -f Step-X
+mvn clean install
 ```
 
-If you want to follow the tutorial along please clone this repository and checkout the `Start` tag.
+2. Run module. 
+```
+mvn spring-boot:run
+```
 
-```
-git clone https://github.com/camunda/camunda-get-started-spring-boot.git
-git checkout -f Start
-```
+3. Open [localhost URL](https://localhost:8080 "Camunda app").
+
+4. Login using credentials from properties file.
+
+![Camunda login page not found](https://i.ibb.co/1fTSbZ0/caminda1.png)
+
+5. Open [H2 URL](https://localhost:8080/h2-console "Camunda app database") to get access to H2 database of Camunda application.
+
+![Camunda H2 not found](https://i.ibb.co/mqbCpb3/camunda2.png)
+
+## Links:
+1. [Camunda docs](https://docs.camunda.org/manual/7.11/ "Camunda docs") 🐉
 
 License: The source files in this repository are made available under the [Apache License Version 2.0](./LICENSE).
