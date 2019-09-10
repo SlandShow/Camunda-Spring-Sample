@@ -7,8 +7,8 @@
   <properties>
     <camunda.spring-boot.version>3.3.1</camunda.spring-boot.version>
     <spring-boot.version>2.1.5.RELEASE</spring-boot.version>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   
   <dependencyManagement>
@@ -29,10 +29,18 @@
       <artifactId>camunda-bpm-spring-boot-starter-webapp</artifactId>
       <version>${camunda.spring-boot.version}</version>
     </dependency>
+
+    <dependency>
+      <groupId>org.camunda.bpm.springboot</groupId>
+      <artifactId>camunda-bpm-spring-boot-starter-rest</artifactId>
+      <version>3.3.4</version>
+    </dependency>
+
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
     </dependency>
+
     <dependency>
       <groupId>com.sun.xml.bind</groupId>
       <artifactId>jaxb-impl</artifactId>
